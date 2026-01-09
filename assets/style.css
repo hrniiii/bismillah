@@ -1,0 +1,174 @@
+/* =========================
+   GLOBAL STYLE
+========================= */
+body {
+  font-family: "Inter", "Segoe UI", "Roboto", sans-serif;
+  background: linear-gradient(135deg, #f8fbff, #eef4ff);
+  color: #1f2937;
+}
+
+/* =========================
+   DASHBOARD TITLE
+========================= */
+/* =========================
+   DASHBOARD TITLE (CENTER & PREMIUM)
+========================= */
+.dashboard-title {
+  font-size: 46px;
+  font-weight: 900;
+  letter-spacing: -0.8px;
+  text-align: center;
+  color: #1e3a8a;
+  margin: 35px 0 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  position: relative;
+}
+
+/* Icon */
+.dashboard-title::before {
+  content: "📊";
+  font-size: 50px;
+}
+
+/* Underline accent */
+.dashboard-title::after {
+  content: "";
+  position: absolute;
+  bottom: -14px;
+  width: 160px;
+  height: 5px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #2563eb, #60a5fa);
+}
+
+/* =========================
+   KPI CARDS
+========================= */
+.kpi-card {
+  padding: 26px;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #ffffff, #f1f5ff);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.35s ease;
+  cursor: default;
+}
+
+.kpi-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 18px 45px rgba(30, 64, 175, 0.25);
+}
+
+.kpi-title {
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.kpi-value {
+  font-size: 34px;
+  font-weight: 800;
+  color: #2563eb;
+}
+
+/* =========================
+   CARD CONTAINER
+========================= */
+.card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 20px;
+  margin-top: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   TABS STYLE
+========================= */
+.custom-tabs {
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+.custom-tabs .tab {
+  border-radius: 14px !important;
+  padding: 12px 22px !important;
+  background: #ffffff;
+  border: none !important;
+  margin-right: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  color: #1f2937;
+}
+
+.custom-tabs .tab--selected {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: #ffffff !important;
+}
+
+/* =========================
+   DROPDOWN & SLIDER
+========================= */
+.Select-control {
+  border-radius: 12px !important;
+  border: 1px solid #d1d5db;
+  font-weight: 500;
+}
+
+.rc-slider-track {
+  background-color: #2563eb;
+}
+
+.rc-slider-handle {
+  border-color: #2563eb;
+}
+
+/* =========================
+   INSIGHT BOX
+========================= */
+.insight-box {
+  background: linear-gradient(135deg, #eef4ff, #ffffff);
+  border-left: 6px solid #2563eb;
+  border-radius: 14px;
+  padding: 18px 22px;
+  margin-top: 16px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #1f2937;
+  animation: fadeInUp 0.6s ease;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  margin-top: 50px;
+  padding: 16px;
+  text-align: center;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
