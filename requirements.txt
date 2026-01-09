@@ -1,19 +1,7 @@
-
-# -- tooling: pastikan pakai versi baru agar wheel terdeteksi
-pip>=24.3.1
-setuptools>=75.1.0
-wheel>=0.45.0
-
-# -- lib numerik: pilih versi yang punya manylinux wheel
 numpy==1.26.4
-
-# -- data stack: cocok dengan numpy 1.x dan Python 3.11
 pandas==2.2.2
 scikit-learn==1.4.2
-
-# -- visualisasi & dashboard
 plotly==5.24.1
 dash==2.17.1
-
-# -- server untuk production
 gunicorn==21.2.0
+``
